@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "AIF"
+  site-url: "https://erling6232.github.io/AIF"
+  description: "Arterial Input Functions"
+  repo-branch: main
+  repo-url: "https://github.com/erling6232/AIF"
