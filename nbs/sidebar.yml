@@ -1,0 +1,7 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_parker.ipynb
+      - 01_aif.ipynb
+      - 02_concentration_map.ipynb
