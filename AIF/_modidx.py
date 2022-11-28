@@ -5,6 +5,9 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://erling6232.github.io',
                 'git_url': 'https://github.com/erling6232/AIF',
                 'lib_path': 'AIF'},
-  'syms': { 'AIF.AIF': {'AIF.AIF.foo': ('core.html#foo', 'AIF/AIF.py')},
-            'AIF.core': {'AIF.core.foo': ('parker.html#foo', 'AIF/core.py')},
-            'AIF.parker': {'AIF.parker.foo': ('parker.html#foo', 'AIF/parker.py')}}}
+  'syms': { 'AIF.aif': {'AIF.aif.find_delay': ('aif.html#find_delay', 'AIF/aif.py'), 'AIF.aif.fit_aif': ('aif.html#fit_aif', 'AIF/aif.py')},
+            'AIF.concentration': { 'AIF.concentration.relative_concentration_map': ( 'concentration_map.html#relative_concentration_map',
+                                                                                     'AIF/concentration.py')},
+            'AIF.parker': { 'AIF.parker.estimate_parkers_model': ('parker.html#estimate_parkers_model', 'AIF/parker.py'),
+                            'AIF.parker.parker': ('parker.html#parker', 'AIF/parker.py'),
+                            'AIF.parker.parker_cost_function': ('parker.html#parker_cost_function', 'AIF/parker.py')}}}
