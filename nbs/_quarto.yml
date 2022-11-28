@@ -15,6 +15,7 @@ website:
   navbar:
     background: primary
     search: true
+    collapse-below: 1g
     left:
       - text: "Get Started"
         href: 00_parker.ipynb
@@ -25,8 +26,7 @@ website:
     style: floating
     contents:
       - auto: "*.ipynb"
-      - section: AIF
-        contents: AIF/*
+
 
 # metadata-files: [nbdev.yml, sidebar.yml]
 metadata-files: [nbdev.yml]
