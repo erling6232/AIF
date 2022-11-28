@@ -16,6 +16,9 @@ website:
     search: true
   sidebar:
     style: floating
-    contents: auto
+    contents:
+      - auto: "/*.ipynb"
+      - section: AIF
+        contents: AIF/*
 
 metadata-files: [nbdev.yml, sidebar.yml]
