@@ -24,7 +24,7 @@ website:
   sidebar:
     style: floating
     contents:
-      - auto: "/*.ipynb"
+      - auto: "*.ipynb"
       - section: AIF
         contents: AIF/*
 
