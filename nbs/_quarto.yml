@@ -15,7 +15,7 @@ website:
   navbar:
     background: primary
     search: true
-l   collapse-below: lg
+    collapse-below: lg
     left:
       - text: "Get Started"
         href: 00_parker.ipynb
