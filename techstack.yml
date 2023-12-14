@@ -1,11 +1,11 @@
 repo_name: erling6232/AIF
-report_id: 03f5245bd9663b2c58696888919ff0ff
+report_id: e5bf3614a6596c40c81a850af49fc45e
 repo_type: Public
-timestamp: '2023-11-10T07:50:38+00:00'
+timestamp: '2023-12-14T10:13:13+00:00'
 requested_by: erling6232
 provider: github
 branch: main
-detected_tools_count: 5
+detected_tools_count: 7
 tools:
 - name: CSS 3
   description: The latest evolution of the Cascading Style Sheets language
@@ -26,6 +26,17 @@ tools:
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
   detection_source: Repo Metadata
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: setup.py
+  last_updated_by: Erling Andersen
+  last_updated_on: 2022-11-25 08:54:24.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -43,7 +54,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/test.yaml"
+  detection_source: ".github/workflows/deploy.yaml"
   last_updated_by: Erling Andersen
   last_updated_on: 2022-11-25 08:54:24.000000000 Z
 - name: Jupyter
@@ -56,3 +67,14 @@ tools:
   sub_category: Data Science Notebooks
   image_url: https://img.stackshare.io/service/4190/fGBUdNf__400x400.jpg
   detection_source: Repo Metadata
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: setup.py
+  last_updated_by: Erling Andersen
+  last_updated_on: 2022-11-25 08:54:24.000000000 Z
