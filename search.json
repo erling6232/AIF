@@ -1,0 +1,56 @@
+[
+  {
+    "objectID": "concentration_map.html",
+    "href": "concentration_map.html",
+    "title": "Concentration map",
+    "section": "",
+    "text": "relative_concentration_map\n\n relative_concentration_map (im:imagedata.series.Series, baseline:int,\n                             k:float, option:str)",
+    "crumbs": [
+      "Get Started",
+      "Concentration map"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Perfusion analysis in MRI studies",
+    "section": "",
+    "text": "This file will become your next README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Perfusion analysis in MRI studies",
+    "section": "Install",
+    "text": "Install\npip install AIF"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Perfusion analysis in MRI studies",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  },
+  {
+    "objectID": "parker.html",
+    "href": "parker.html",
+    "title": "Parker population AIF",
+    "section": "",
+    "text": "References: 1. McGrath et al, Magnetic Resonance in Medicine 61:1173–1184 (2009) 1. Parker et al, Magnetic Resonance in Medicine 56:993–1000 (2006)\n\n\nestimate_parkers_model\n\n estimate_parkers_model (measured:numpy.ndarray, timeline:numpy.ndarray,\n                         return_result:bool=False, verbose:bool=True)\n\nEstimate best Parker parameters for measured data.\n\n\n\n\n\n\n\n\n\n\nType\nDefault\nDetails\n\n\n\n\nmeasured\nndarray\n\nMeasured data\n\n\ntimeline\nndarray\n\nTimeline in seconds\n\n\nreturn_result\nbool\nFalse\nWhen True, return OptimizeResult, otherwise return fitted parameters\n\n\nverbose\nbool\nTrue\nWhether estimated parameters will be printed\n\n\nReturns\ntyping.Union[scipy.optimize._optimize.OptimizeResult, numpy.ndarray]\n\n\n\n\n\n\n\n\nparker_cost_function\n\n parker_cost_function (x:tuple, t:numpy.ndarray, y:numpy.ndarray)\n\nCalculate difference between parker function and given data y.\n\n\n\n\n\n\n\n\n\nType\nDetails\n\n\n\n\nx\ntuple\nParker parameters (A1, A2, T1, T2, sigma1, sigma2, alpha, beta, s, tau)\n\n\nt\nndarray\nTimeline in seconds\n\n\ny\nndarray\nMeasured data\n\n\nReturns\nndarray\nDifference\n\n\n\n\n\n\nparker\n\n parker (x:tuple, N:int, t:numpy.ndarray)\n\nCalculate a AIF signal, given the supplied parameters.\n\n\n\n\n\n\n\n\n\nType\nDetails\n\n\n\n\nx\ntuple\nParker parameters (A1, A2, T1, T2, sigma1, sigma2, alpha, beta, s, tau)\n\n\nN\nint\nLength of signal\n\n\nt\nndarray\nTimeline in seconds (length N)\n\n\nReturns\nndarray\nSignal at timepoints t\n\n\n\n\nx = (0.809, 0.33, 0.17046, 0.365, 0.0563, 0.132, 1.050, 0.1685, 38.078, 0.483)\ntimeline = np.arange(0., 300., 2.5)\np = parker(x, len(timeline), timeline)\n\nfig, ax = plt.subplots()\nax.plot(timeline, p)\nax.set_ylabel('Parker [a.u.]')\nax.set_xlabel('Time [s]')\nplt.show()",
+    "crumbs": [
+      "Get Started",
+      "Parker population AIF"
+    ]
+  },
+  {
+    "objectID": "aif.html",
+    "href": "aif.html",
+    "title": "AIF",
+    "section": "",
+    "text": "fit_aif\n\n fit_aif (dce:numpy.ndarray, mask:numpy.ndarray)\n\n\n\n\nfind_delay\n\n find_delay (ref:numpy.ndarray, test:numpy.ndarray)",
+    "crumbs": [
+      "Get Started",
+      "AIF"
+    ]
+  }
+]
